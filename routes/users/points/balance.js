@@ -24,6 +24,6 @@ module.exports = (req, res) => {
     res.status(200).json(successResponse);
   } catch (e) {
     console.warn(e);
-    res.status(400).json(errorResponse);
+    res.status(404).json(errorResponse);
   }
 };
